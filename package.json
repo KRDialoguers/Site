@@ -1,0 +1,36 @@
+{
+  "name": "dialoguers-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed:build": "node scripts/make-seed.mjs",
+    "seed:import": "sanity dataset import seed/dialoguers.ndjson production --replace",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^2.2.0",
+    "@sanity/vision": "^6.24.0",
+    "d3-geo": "^3.1.2",
+    "next": "16.4.6",
+    "next-sanity": "^13.5.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sanity": "^6.24.0",
+    "server-only": "^0.0.1",
+    "styled-components": "^6.6.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5"
+  }
+}

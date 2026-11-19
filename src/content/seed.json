@@ -1,0 +1,1301 @@
+{
+ "settings": {
+  "tagline": "Conversations that connect people, ideas, and worlds.",
+  "intro": "Dialoguers is a series of long-form conversations hosted by Kris Reyes — with diplomats, athletes, planners, engineers and writers — about the questions that cut across all of them.",
+  "host": {
+   "name": "Kris Reyes",
+   "role": "Host & founder",
+   "location": "New York"
+  },
+  "featured": "designing-belonging",
+  "contactEmail": "hello@dialoguers.example"
+ },
+ "themes": [
+  {
+   "id": "global",
+   "name": "Global Affairs",
+   "short": null,
+   "tagline": "Power, diplomacy and a changing world",
+   "blurb": "Who writes the rules when no single power can, and what the rest of the world does in the meantime.",
+   "color": "#C47A63",
+   "soft": "#F4E1D9",
+   "deep": "#7A3826",
+   "subtopics": [
+    "Geopolitics",
+    "Diplomacy",
+    "Trade & Supply Chains",
+    "Democracy"
+   ],
+   "quote": {
+    "text": "Neutrality is a posture. Resilience is a plan.",
+    "by": "layla-haddad"
+   },
+   "order": 0
+  },
+  {
+   "id": "belonging",
+   "name": "Belonging & Identity",
+   "short": null,
+   "tagline": "Identity, migration and what makes a home",
+   "blurb": "Where we come from, where we can be fully ourselves, and the quiet design of being expected.",
+   "color": "#8E7CAB",
+   "soft": "#EAE5F1",
+   "deep": "#4B3B67",
+   "subtopics": [
+    "Migration",
+    "Faith & Meaning",
+    "Family",
+    "Home"
+   ],
+   "quote": {
+    "text": "Not welcomed — expected.",
+    "by": "elena-park"
+   },
+   "order": 1
+  },
+  {
+   "id": "sustain",
+   "name": "Sustainability & the Next Economy",
+   "short": "Sustainability",
+   "tagline": "Growth, climate and what comes next",
+   "blurb": "Economies that last longer than an election cycle, and the people already building them.",
+   "color": "#6C9A7D",
+   "soft": "#E1EEE5",
+   "deep": "#2E5A3E",
+   "subtopics": [
+    "Climate",
+    "Development",
+    "Energy",
+    "Long-term Thinking"
+   ],
+   "quote": {
+    "text": "We have the knowledge. We need institutions that can wait.",
+    "by": "tomas-rivera"
+   },
+   "order": 2
+  },
+  {
+   "id": "sport",
+   "name": "Sport & Human Potential",
+   "short": "Sport",
+   "tagline": "Performance, people and a bigger impact",
+   "blurb": "What competition teaches about pressure, identity and the people we become alongside a team.",
+   "color": "#BD8A4C",
+   "soft": "#F3E8D8",
+   "deep": "#6B4A1F",
+   "subtopics": [
+    "Health & Performance",
+    "Youth & Next Gen",
+    "Leadership",
+    "Teams"
+   ],
+   "quote": {
+    "text": "Agency is having a voice before you have a title.",
+    "by": "isabel-romero"
+   },
+   "order": 3
+  },
+  {
+   "id": "cities",
+   "name": "Cities & Culture",
+   "short": null,
+   "tagline": "Ideas, creativity and how we see the world",
+   "blurb": "Streets, stoops and studios: how places shape the conversations that happen in them.",
+   "color": "#C17089",
+   "soft": "#F4E1E7",
+   "deep": "#6E2F45",
+   "subtopics": [
+    "Urbanism",
+    "Design & Living",
+    "Arts",
+    "Public Space"
+   ],
+   "quote": {
+    "text": "The city tells you what it needs if you watch long enough.",
+    "by": "aisha-kamara"
+   },
+   "order": 4
+  },
+  {
+   "id": "tech",
+   "name": "Tech & Society",
+   "short": null,
+   "tagline": "AI, innovation and the human question",
+   "blurb": "How the tools we build reshape work, power and attention, and which choices are still ours to make.",
+   "color": "#6F8FB0",
+   "soft": "#E3EAF2",
+   "deep": "#2F4A68",
+   "subtopics": [
+    "AI & Society",
+    "Innovation",
+    "Work & Automation",
+    "Governance"
+   ],
+   "quote": {
+    "text": "Improvisation and responsibility. Someone has to own the outcome.",
+    "by": "hiro-tanaka"
+   },
+   "order": 5
+  }
+ ],
+ "people": [
+  {
+   "id": "maya-chen",
+   "name": "Maya Chen",
+   "role": "AI researcher and policy advisor",
+   "field": "Science & Tech",
+   "city": "Singapore",
+   "region": "Asia",
+   "lat": 1.35,
+   "lon": 103.8,
+   "nudge": null,
+   "themes": [
+    "tech",
+    "global"
+   ],
+   "bio": "Works on how governments buy and deploy AI systems, and who those systems end up serving.",
+   "connections": [
+    "kwame-adu"
+   ],
+   "photo": null
+  },
+  {
+   "id": "david-morrell",
+   "name": "David Morrell",
+   "role": "Former diplomat and global affairs analyst",
+   "field": "Politics & Policy",
+   "city": "London",
+   "region": "Europe",
+   "lat": 51.5,
+   "lon": -0.12,
+   "nudge": [
+    -3,
+    -2.5
+   ],
+   "themes": [
+    "global"
+   ],
+   "bio": "Thirty years in foreign service; now writes about the institutions built after 1945 and what replaces them.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "aisha-kamara",
+   "name": "Aisha Kamara",
+   "role": "Urban planner and sustainability advocate",
+   "field": "Cities & Design",
+   "city": "Nairobi",
+   "region": "Africa",
+   "lat": -1.29,
+   "lon": 36.8,
+   "nudge": null,
+   "themes": [
+    "cities",
+    "sustain"
+   ],
+   "bio": "Plans with informal markets rather than around them, and argues the city is already telling us what it needs.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "lucas-pereira",
+   "name": "Lucas Pereira",
+   "role": "Former athlete and social entrepreneur",
+   "field": "Sport",
+   "city": "São Paulo",
+   "region": "Latin America",
+   "lat": -23.5,
+   "lon": -46.6,
+   "nudge": null,
+   "themes": [
+    "sport",
+    "belonging"
+   ],
+   "bio": "Played professionally for twelve seasons; now runs programs that help athletes build identities beyond the game.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "elena-park",
+   "name": "Elena Park",
+   "role": "Author and cultural commentator",
+   "field": "Arts & Culture",
+   "city": "New York",
+   "region": "North America",
+   "lat": 40.7,
+   "lon": -74,
+   "nudge": [
+    2.5,
+    1.5
+   ],
+   "themes": [
+    "belonging",
+    "cities"
+   ],
+   "bio": "Writes essays about home, family and the feeling of being expected.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "ravi-desai",
+   "name": "Ravi Desai",
+   "role": "Technology policy expert and investor",
+   "field": "Business & Tech",
+   "city": "Toronto",
+   "region": "North America",
+   "lat": 43.65,
+   "lon": -79.4,
+   "nudge": [
+    -3,
+    -2
+   ],
+   "themes": [
+    "tech"
+   ],
+   "bio": "Invests in early-stage companies working on access and infrastructure; previously advised on digital policy.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "sophie-laurent",
+   "name": "Sophie Laurent",
+   "role": "Design leader and urbanist",
+   "field": "Cities & Design",
+   "city": "Paris",
+   "region": "Europe",
+   "lat": 48.85,
+   "lon": 2.35,
+   "nudge": [
+    3,
+    1
+   ],
+   "themes": [
+    "cities"
+   ],
+   "bio": "Leads a studio designing public spaces that are generous to strangers.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "kwame-adu",
+   "name": "Kwame Adu",
+   "role": "Development economist and policy advisor",
+   "field": "Politics & Policy",
+   "city": "Accra",
+   "region": "Africa",
+   "lat": 5.6,
+   "lon": -0.19,
+   "nudge": null,
+   "themes": [
+    "sustain",
+    "global"
+   ],
+   "bio": "Advises governments on growth strategy, trade and negotiating as a regional bloc.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "isabel-romero",
+   "name": "Isabel Romero",
+   "role": "Athlete and youth leadership advocate",
+   "field": "Sport",
+   "city": "Madrid",
+   "region": "Europe",
+   "lat": 40.4,
+   "lon": -3.7,
+   "nudge": [
+    -1.5,
+    2.5
+   ],
+   "themes": [
+    "sport"
+   ],
+   "bio": "Competes internationally and mentors young athletes on finding a voice off the pitch.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "hiro-tanaka",
+   "name": "Hiro Tanaka",
+   "role": "Robotics engineer and founder",
+   "field": "Science & Tech",
+   "city": "Tokyo",
+   "region": "Asia",
+   "lat": 35.7,
+   "lon": 139.7,
+   "nudge": null,
+   "themes": [
+    "tech",
+    "sustain"
+   ],
+   "bio": "Builds robots for logistics and environmental sensing; interested in what humans keep doing best.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "layla-haddad",
+   "name": "Layla Haddad",
+   "role": "Journalist and editor",
+   "field": "Journalism & Media",
+   "city": "Beirut",
+   "region": "Middle East",
+   "lat": 33.9,
+   "lon": 35.5,
+   "nudge": null,
+   "themes": [
+    "global",
+    "belonging"
+   ],
+   "bio": "Has reported from places that are always being asked to choose a side.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "tomas-rivera",
+   "name": "Tomás Rivera",
+   "role": "Climate scientist",
+   "field": "Science & Tech",
+   "city": "Santiago",
+   "region": "Latin America",
+   "lat": -33.45,
+   "lon": -70.67,
+   "nudge": null,
+   "themes": [
+    "sustain"
+   ],
+   "bio": "Studies Andean glaciers and what ice records about the centuries behind us.",
+   "connections": [],
+   "photo": null
+  },
+  {
+   "id": "priya-nair",
+   "name": "Priya Nair",
+   "role": "Sports psychologist",
+   "field": "Science & Health",
+   "city": "Sydney",
+   "region": "Oceania",
+   "lat": -33.87,
+   "lon": 151.2,
+   "nudge": null,
+   "themes": [
+    "sport",
+    "belonging"
+   ],
+   "bio": "Works with elite and youth athletes on pressure, rituals and coaching the whole person.",
+   "connections": [],
+   "photo": null
+  }
+ ],
+ "conversations": [
+  {
+   "id": "next-global-order",
+   "title": "The Next Global Order",
+   "dek": "Power, technology, and a more multipolar world.",
+   "date": "2026-11-10",
+   "minutes": 58,
+   "format": "video",
+   "featured": false,
+   "guests": [
+    "david-morrell",
+    "layla-haddad"
+   ],
+   "themes": [
+    "global",
+    "tech"
+   ],
+   "tags": [
+    "Geopolitics",
+    "Diplomacy",
+    "Power"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "Who writes the rules when no single power can?",
+    "Is neutrality a position or a strategy?",
+    "Where does technology fit in statecraft?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "What “order” means now"
+    },
+    {
+     "time": "9:00",
+     "title": "The end of the single center"
+    },
+    {
+     "time": "21:00",
+     "title": "Technology as statecraft"
+    },
+    {
+     "time": "35:00",
+     "title": "Middle powers and choice"
+    },
+    {
+     "time": "50:00",
+     "title": "What to watch"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "We talk about a “global order” as if someone designed it. David, did anyone?"
+    },
+    {
+     "time": "0:40",
+     "speaker": "david-morrell",
+     "text": "Someone designed parts of it, after 1945. What we have now is mostly the residue of those designs, plus a great deal of improvisation."
+    },
+    {
+     "time": "2:00",
+     "speaker": "layla-haddad",
+     "text": "From Beirut it never looked like order. It looked like whose rules apply on which day."
+    },
+    {
+     "time": "9:00",
+     "speaker": null,
+     "text": "So is the change we’re living through a collapse, or just more people noticing?"
+    },
+    {
+     "time": "10:00",
+     "speaker": "david-morrell",
+     "text": "Both. The architecture is still standing, but fewer countries believe it was built with them in mind."
+    },
+    {
+     "time": "21:00",
+     "speaker": "layla-haddad",
+     "text": "And technology is now where the rules actually get written: chips, cables, platforms."
+    },
+    {
+     "time": "35:00",
+     "speaker": null,
+     "text": "Which brings us to the middle. Is choosing not to choose a strategy?"
+    },
+    {
+     "time": "36:00",
+     "speaker": "david-morrell",
+     "text": "It’s the oldest strategy there is. The question is whether it can be coordinated."
+    }
+   ]
+  },
+  {
+   "id": "bridging-ai-opportunity",
+   "title": "Bridging AI and Opportunity",
+   "dek": "Innovation, work, and who the dividend is really for.",
+   "date": "2026-11-03",
+   "minutes": 46,
+   "format": "video",
+   "featured": false,
+   "guests": [
+    "maya-chen",
+    "ravi-desai"
+   ],
+   "themes": [
+    "tech"
+   ],
+   "tags": [
+    "AI",
+    "Policy",
+    "Inclusion"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "Who is AI’s opportunity actually for?",
+    "Can policy move at the speed of deployment?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "Who AI is built for"
+    },
+    {
+     "time": "10:00",
+     "title": "Policy that keeps up"
+    },
+    {
+     "time": "25:00",
+     "title": "Capital and access"
+    },
+    {
+     "time": "38:20",
+     "title": "A fairer dividend"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Maya, when people say AI will create opportunity, I always want to ask: for whom?"
+    },
+    {
+     "time": "0:45",
+     "speaker": "maya-chen",
+     "text": "That’s the right question, and it’s usually asked too late — after the systems are deployed."
+    },
+    {
+     "time": "10:00",
+     "speaker": "ravi-desai",
+     "text": "Policy tends to arrive after the market has already decided who benefits."
+    },
+    {
+     "time": "11:00",
+     "speaker": "maya-chen",
+     "text": "Which is why I spend more time on procurement than on principles. Who buys the system shapes who it serves."
+    },
+    {
+     "time": "25:00",
+     "speaker": null,
+     "text": "Ravi, you invest in this. Does the money care about access?"
+    },
+    {
+     "time": "26:00",
+     "speaker": "ravi-desai",
+     "text": "Money cares about returns. Access becomes interesting when it becomes a market."
+    }
+   ]
+  },
+  {
+   "id": "designing-belonging",
+   "title": "Designing Belonging",
+   "dek": "On thresholds, stoops, and the feeling of being expected.",
+   "date": "2026-10-27",
+   "minutes": 41,
+   "format": "audio",
+   "featured": true,
+   "guests": [
+    "elena-park",
+    "sophie-laurent"
+   ],
+   "themes": [
+    "belonging",
+    "cities"
+   ],
+   "tags": [
+    "Cities",
+    "Culture",
+    "People"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "Can a place make you feel expected?",
+    "What do generous cities have in common?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "The feeling of being expected"
+    },
+    {
+     "time": "8:00",
+     "title": "Streets, stoops and thresholds"
+    },
+    {
+     "time": "22:00",
+     "title": "Writing home"
+    },
+    {
+     "time": "33:20",
+     "title": "Design for strangers"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Elena, you’ve written that belonging is the feeling of being expected. Say more."
+    },
+    {
+     "time": "0:30",
+     "speaker": "elena-park",
+     "text": "It’s walking into a room and realizing someone saved you a seat. Not welcomed — expected."
+    },
+    {
+     "time": "8:00",
+     "speaker": "sophie-laurent",
+     "text": "Cities can do that too. A bench, a wide stoop, a café that doesn’t hurry you."
+    },
+    {
+     "time": "9:00",
+     "speaker": null,
+     "text": "So you can design for it?"
+    },
+    {
+     "time": "9:30",
+     "speaker": "sophie-laurent",
+     "text": "You can design against it very easily. Designing for it takes more humility."
+    },
+    {
+     "time": "33:20",
+     "speaker": "elena-park",
+     "text": "The best places are generous to strangers. That’s where belonging starts."
+    }
+   ]
+  },
+  {
+   "id": "sport-identity-agency",
+   "title": "Sport, Identity and Agency",
+   "dek": "Who you are when the whistle stops.",
+   "date": "2026-10-20",
+   "minutes": 52,
+   "format": "video",
+   "featured": false,
+   "guests": [
+    "lucas-pereira",
+    "isabel-romero"
+   ],
+   "themes": [
+    "sport",
+    "belonging"
+   ],
+   "tags": [
+    "Sport",
+    "Youth",
+    "Inclusion"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "What happens to identity when a career ends?",
+    "How do young athletes find a voice?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "Who you are when you stop"
+    },
+    {
+     "time": "12:00",
+     "title": "The team as identity"
+    },
+    {
+     "time": "26:40",
+     "title": "Youth and voice"
+    },
+    {
+     "time": "41:40",
+     "title": "Life after the scoreboard"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Lucas, what happens to identity when the career ends?"
+    },
+    {
+     "time": "0:40",
+     "speaker": "lucas-pereira",
+     "text": "You find out how much of you was the jersey. For me, a lot."
+    },
+    {
+     "time": "12:00",
+     "speaker": "isabel-romero",
+     "text": "With young athletes I see the opposite risk — the sport becomes the only place they’re allowed to be someone."
+    },
+    {
+     "time": "13:00",
+     "speaker": null,
+     "text": "So agency is learning to be someone off the pitch too."
+    },
+    {
+     "time": "13:20",
+     "speaker": "isabel-romero",
+     "text": "Agency is having a voice before you have a title."
+    },
+    {
+     "time": "41:40",
+     "speaker": "lucas-pereira",
+     "text": "The scoreboard resets. The people you became with your team — that stays."
+    }
+   ]
+  },
+  {
+   "id": "cities-people-belonging",
+   "title": "Cities, People and Belonging",
+   "dek": "Reading Nairobi at street level.",
+   "date": "2026-10-13",
+   "minutes": 38,
+   "format": "audio",
+   "featured": false,
+   "guests": [
+    "aisha-kamara"
+   ],
+   "themes": [
+    "cities",
+    "belonging"
+   ],
+   "tags": [
+    "Cities",
+    "Culture",
+    "Identity"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "What does a planner see that the rest of us miss?",
+    "Is informal the same as disorder?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "Nairobi at street level"
+    },
+    {
+     "time": "10:00",
+     "title": "Informal is not disorder"
+    },
+    {
+     "time": "25:00",
+     "title": "Planning with, not for"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Aisha, what does a planner see that the rest of us walk past?"
+    },
+    {
+     "time": "0:35",
+     "speaker": "aisha-kamara",
+     "text": "Where people actually sit. Where they wait. The city tells you what it needs if you watch long enough."
+    },
+    {
+     "time": "10:00",
+     "speaker": "aisha-kamara",
+     "text": "Informal markets are often called chaos. They’re usually the most finely tuned systems in the city."
+    },
+    {
+     "time": "11:00",
+     "speaker": null,
+     "text": "Then what’s the planner’s job?"
+    },
+    {
+     "time": "11:30",
+     "speaker": "aisha-kamara",
+     "text": "Not to replace them. To plan with the people already doing the work."
+    }
+   ]
+  },
+  {
+   "id": "ai-work-human-edge",
+   "title": "AI, Work and the Human Edge",
+   "dek": "What robots teach us about the work worth keeping.",
+   "date": "2026-10-06",
+   "minutes": 44,
+   "format": "video",
+   "featured": false,
+   "guests": [
+    "hiro-tanaka"
+   ],
+   "themes": [
+    "tech"
+   ],
+   "tags": [
+    "AI & Society",
+    "Work",
+    "Education"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "Is automation replacement or negotiation?",
+    "What is the human edge?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "Robots in the real world"
+    },
+    {
+     "time": "11:40",
+     "title": "What machines still can’t do"
+    },
+    {
+     "time": "26:40",
+     "title": "Work worth keeping"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Hiro, you build robots. What do people get wrong about them?"
+    },
+    {
+     "time": "0:30",
+     "speaker": "hiro-tanaka",
+     "text": "They imagine replacement. What I see is negotiation — the robot takes a task, the person redefines the job."
+    },
+    {
+     "time": "11:40",
+     "speaker": "hiro-tanaka",
+     "text": "Machines are still poor at the unexpected. A child runs into the aisle; the person adapts, the robot stops."
+    },
+    {
+     "time": "12:40",
+     "speaker": null,
+     "text": "So the human edge is improvisation?"
+    },
+    {
+     "time": "13:00",
+     "speaker": "hiro-tanaka",
+     "text": "Improvisation and responsibility. Someone has to own the outcome."
+    }
+   ]
+  },
+  {
+   "id": "africas-next-chapter",
+   "title": "Africa’s Next Chapter",
+   "dek": "The youngest continent, its cities, and its choices.",
+   "date": "2026-09-29",
+   "minutes": 55,
+   "format": "video",
+   "featured": false,
+   "guests": [
+    "kwame-adu",
+    "aisha-kamara"
+   ],
+   "themes": [
+    "sustain",
+    "global"
+   ],
+   "tags": [
+    "Economy",
+    "Youth",
+    "Innovation"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "Who gets to tell the story of a continent?",
+    "What does agency look like in a multipolar world?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "The youngest continent"
+    },
+    {
+     "time": "13:20",
+     "title": "Growth that lasts"
+    },
+    {
+     "time": "30:00",
+     "title": "Cities as engines"
+    },
+    {
+     "time": "45:00",
+     "title": "Agency in a multipolar world"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Kwame, the story told about Africa is usually told from somewhere else. Where do you start?"
+    },
+    {
+     "time": "0:45",
+     "speaker": "kwame-adu",
+     "text": "With demographics. Within a generation, roughly one in four people on Earth will be African. That’s not a footnote."
+    },
+    {
+     "time": "13:20",
+     "speaker": "aisha-kamara",
+     "text": "And most of them will live in cities that haven’t been built yet."
+    },
+    {
+     "time": "14:20",
+     "speaker": null,
+     "text": "Which is a risk or an opportunity, depending on who does the building."
+    },
+    {
+     "time": "45:00",
+     "speaker": "kwame-adu",
+     "text": "Agency is the word. More partners means more choices — if we negotiate as a bloc."
+    }
+   ]
+  },
+  {
+   "id": "the-pragmatic-middle",
+   "title": "The Pragmatic Middle",
+   "dek": "Resilience, not neutrality, from places asked to pick a side.",
+   "date": "2026-09-22",
+   "minutes": 36,
+   "format": "audio",
+   "featured": false,
+   "guests": [
+    "layla-haddad"
+   ],
+   "themes": [
+    "global"
+   ],
+   "tags": [
+    "Geopolitics",
+    "Middle East",
+    "Trade"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "Is choosing not to choose a strategy?",
+    "How long does the window stay open?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "Reporting from the middle"
+    },
+    {
+     "time": "10:00",
+     "title": "Resilience over neutrality"
+    },
+    {
+     "time": "25:00",
+     "title": "The window"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Layla, you’ve reported from places that are always asked to pick a side."
+    },
+    {
+     "time": "0:30",
+     "speaker": "layla-haddad",
+     "text": "And they rarely want to. They want options — trade with everyone, depend on no one."
+    },
+    {
+     "time": "10:00",
+     "speaker": null,
+     "text": "Is that neutrality?"
+    },
+    {
+     "time": "10:20",
+     "speaker": "layla-haddad",
+     "text": "It’s resilience. Neutrality is a posture. Resilience is a plan."
+    },
+    {
+     "time": "25:00",
+     "speaker": "layla-haddad",
+     "text": "The window is real. But alignment has to become policy, or it fades."
+    }
+   ]
+  },
+  {
+   "id": "the-mind-under-pressure",
+   "title": "The Mind Under Pressure",
+   "dek": "Rituals, resets, and coaching the whole person.",
+   "date": "2026-09-15",
+   "minutes": 40,
+   "format": "audio",
+   "featured": false,
+   "guests": [
+    "priya-nair",
+    "isabel-romero"
+   ],
+   "themes": [
+    "sport"
+   ],
+   "tags": [
+    "Health & Performance",
+    "Leadership"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "What is pressure, really?",
+    "Why do rituals work?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "What pressure is"
+    },
+    {
+     "time": "9:00",
+     "title": "Rituals and resets"
+    },
+    {
+     "time": "25:00",
+     "title": "Coaching the whole person"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Priya, what is pressure, physiologically?"
+    },
+    {
+     "time": "0:30",
+     "speaker": "priya-nair",
+     "text": "A signal that something matters. The trouble is when the signal gets louder than the task."
+    },
+    {
+     "time": "9:00",
+     "speaker": "isabel-romero",
+     "text": "Before every match I’d tie my left boot twice. Silly, but it told my body: we’ve been here before."
+    },
+    {
+     "time": "10:00",
+     "speaker": "priya-nair",
+     "text": "That’s not silly. Rituals are a way of borrowing calm from the past."
+    },
+    {
+     "time": "25:00",
+     "speaker": "priya-nair",
+     "text": "The best coaches coach the person first. Performance follows."
+    }
+   ]
+  },
+  {
+   "id": "climate-and-the-long-game",
+   "title": "Climate and the Long Game",
+   "dek": "Ice, engineering, and institutions that can wait.",
+   "date": "2026-09-08",
+   "minutes": 49,
+   "format": "video",
+   "featured": false,
+   "guests": [
+    "tomas-rivera",
+    "hiro-tanaka"
+   ],
+   "themes": [
+    "sustain",
+    "tech"
+   ],
+   "tags": [
+    "Climate",
+    "Engineering",
+    "Policy"
+   ],
+   "media": {
+    "youtubeId": null,
+    "audioUrl": null
+   },
+   "questions": [
+    "How do you think in decades?",
+    "Is the long game technical or political?"
+   ],
+   "chapters": [
+    {
+     "time": "0:00",
+     "title": "Thinking in decades"
+    },
+    {
+     "time": "11:40",
+     "title": "Glaciers as evidence"
+    },
+    {
+     "time": "26:40",
+     "title": "Engineering adaptation"
+    },
+    {
+     "time": "40:00",
+     "title": "Patience as policy"
+    }
+   ],
+   "transcript": [
+    {
+     "time": "0:00",
+     "speaker": null,
+     "text": "Tomás, how do you think about time differently from the rest of us?"
+    },
+    {
+     "time": "0:35",
+     "speaker": "tomas-rivera",
+     "text": "I study ice. Ice remembers centuries. It makes a four-year election cycle feel very short."
+    },
+    {
+     "time": "11:40",
+     "speaker": "tomas-rivera",
+     "text": "In the Andes we can see the change from one field season to the next."
+    },
+    {
+     "time": "26:40",
+     "speaker": "hiro-tanaka",
+     "text": "Engineering helps with adaptation — sensors, water systems — but tools don’t decide priorities."
+    },
+    {
+     "time": "40:00",
+     "speaker": null,
+     "text": "So the long game is a political problem, not a technical one?"
+    },
+    {
+     "time": "40:30",
+     "speaker": "tomas-rivera",
+     "text": "It’s a patience problem. We have the knowledge. We need institutions that can wait."
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "id": "the-next-middle",
+   "kicker": "Essay · World",
+   "title": "The Next Middle:",
+   "subtitle": "Why the Global Center Still Matters",
+   "dek": "Amid a more polarized world, a pragmatic middle is re-emerging — not as a fence-sitting position, but as a coalition for stability, growth and agency.",
+   "date": "2026-11-10",
+   "minutes": 5,
+   "theme": "global",
+   "glance": [
+    {
+     "label": "The idea",
+     "text": "A pragmatic global middle is gaining traction."
+    },
+    {
+     "label": "Why it matters",
+     "text": "It could shape trade, security and the next phase of global growth."
+    },
+    {
+     "label": "The bottom line",
+     "text": "Pragmatism, not polarity, may define the next era."
+    }
+   ],
+   "nutrition": {
+    "topic": "Geopolitics / Global Economy",
+    "ingredients": "Power, trade, security, agency",
+    "complexity": 3,
+    "time": "5 minutes",
+    "goodFor": "A clearer, big-picture read on a shifting global landscape."
+   },
+   "bigPicture": "After years of sharp divides, a more pragmatic coalition is taking shape — one that prioritizes economic resilience, national security and practical cooperation over ideology.",
+   "insights": [
+    {
+     "lead": "The “global middle” is growing.",
+     "text": "From key economies in Asia to parts of Europe and the Global South, more countries are rejecting binary choices and choosing flexibility instead."
+    },
+    {
+     "lead": "It’s about resilience, not neutrality.",
+     "text": "Countries are building options — on trade, technology and security — to reduce vulnerability in a more volatile world."
+    },
+    {
+     "lead": "The window is real, but not endless.",
+     "text": "If the middle wants lasting influence, it needs to turn alignment into action, especially on economic and security cooperation."
+    }
+   ],
+   "takeaway": "The middle is not a retreat from leadership — it’s a strategy for staying in the game.",
+   "watchLabel": "What to watch",
+   "watch": [
+    {
+     "label": "Next 30 days",
+     "text": "Key summits on trade and supply chains."
+    },
+    {
+     "label": "Next 90 days",
+     "text": "Signals on a more coordinated security framework in Asia."
+    },
+    {
+     "label": "Next 6 months",
+     "text": "Whether the “middle” can turn alignment into policy."
+    }
+   ],
+   "related": [
+    "the-pragmatic-middle",
+    "next-global-order",
+    "africas-next-chapter"
+   ]
+  },
+  {
+   "id": "what-a-good-question-does",
+   "kicker": "Essay · Craft",
+   "title": "What a Good Question Does",
+   "subtitle": null,
+   "dek": "Notes toward the book: a good question doesn’t extract an answer. It opens a room both people can stand in.",
+   "date": "2026-10-28",
+   "minutes": 4,
+   "theme": "belonging",
+   "glance": [
+    {
+     "label": "The idea",
+     "text": "Questions shape the conversation more than answers do."
+    },
+    {
+     "label": "Why it matters",
+     "text": "Most dialogue fails at the question, not the reply."
+    },
+    {
+     "label": "The bottom line",
+     "text": "Ask what you actually want to know — then wait."
+    }
+   ],
+   "nutrition": {
+    "topic": "Dialogue / Craft",
+    "ingredients": "Curiosity, specificity, silence",
+    "complexity": 2,
+    "time": "4 minutes",
+    "goodFor": "Anyone preparing for a conversation that matters."
+   },
+   "bigPicture": "Across every conversation on Dialoguers, the moments that open up rarely follow a clever question. They follow a specific one, asked by someone who visibly wants to know.",
+   "insights": [
+    {
+     "lead": "Curiosity is visible.",
+     "text": "People can tell within a sentence whether you are asking to learn or asking to perform."
+    },
+    {
+     "lead": "Specific beats clever.",
+     "text": "“What did you see on the street that morning?” goes further than “What does the city mean to you?”"
+    },
+    {
+     "lead": "Silence is part of the question.",
+     "text": "The answer worth having usually arrives after the pause most interviewers fill."
+    }
+   ],
+   "takeaway": "Ask the question you actually want answered — then leave room for it.",
+   "watchLabel": "Try it",
+   "watch": [
+    {
+     "label": "Before",
+     "text": "Write the one question you most want answered."
+    },
+    {
+     "label": "During",
+     "text": "Count to five before following up."
+    },
+    {
+     "label": "After",
+     "text": "Note which question opened the room."
+    }
+   ],
+   "related": [
+    "designing-belonging",
+    "the-mind-under-pressure"
+   ]
+  }
+ ],
+ "regions": [
+  "North America",
+  "Latin America",
+  "Europe",
+  "Africa",
+  "Middle East",
+  "Asia",
+  "Oceania"
+ ]
+}
