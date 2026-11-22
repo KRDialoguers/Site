@@ -17,8 +17,8 @@
     "d3-geo": "^3.1.2",
     "next": "16.4.6",
     "next-sanity": "^13.5.1",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "sanity": "^6.24.0",
     "server-only": "^0.0.1",
     "styled-components": "^6.6.0",
@@ -32,5 +32,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22 <25 || >=26"
   }
 }
