@@ -2,18 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getContent } from '@/lib/content';
-import { byDate, fmtDate, indexes, thumbVars } from '@/lib/util';
+import { byDate, fmtDate, indexes } from '@/lib/util';
 import { Av, ConvCard, ThemeChip } from '@/lib/ui';
-import Player from '@/components/Player';
+import ConversationView from '@/components/conversation/ConversationView';
+import { sanityEnabled } from '@/sanity/env';
 import Newsletter from '@/components/Newsletter';
 
 type Params = { params: Promise<{ slug: string }> };
 
-// Decorative waveform for audio conversations, stable per conversation.
-function waveHeights(id: string) {
-  let seed = id.length * 7;
-  return Array.from({ length: 90 }, () => { seed = (seed * 9301 + 49297) % 233280; return Math.round(12 + (seed / 233280) * 88); });
-}
 
 export async function generateStaticParams() {
   return (await getContent()).conversations.map((c) => ({ slug: c.id }));
@@ -35,9 +31,6 @@ export default async function ConversationPage({ params }: Params) {
     .map((x) => ({ x, s: x.themes.filter((t) => c.themes.includes(t)).length * 2 + x.guests.filter((g) => c.guests.includes(g)).length * 3 }))
     .filter((r) => r.s).sort((a, b) => b.s - a.s || byDate(a.x, b.x)).slice(0, 3).map((r) => r.x);
   const speakerNames = Object.fromEntries([...c.guests.map((g) => [g, P[g]?.name ?? '']), ['__host', host.name]]);
-  const stage = c.format === 'video'
-    ? <div className="stack"><Av p={{ name: host.name }} size={96} T={T} host />{c.guests.map((g) => P[g] && <Av key={g} p={P[g]} size={96} T={T} />)}</div>
-    : <div className="wave">{waveHeights(c.id).map((h, i) => <i key={i} style={{ height: `${h}%` }} />)}</div>;
 
   return (
     <>
@@ -52,24 +45,29 @@ export default async function ConversationPage({ params }: Params) {
             <div className="chips">{c.themes.map((t) => T[t] && <ThemeChip key={t} t={T[t]} />)}{c.tags.map((t) => <span key={t} className="chip">{t}</span>)}</div>
           </div>
         </div>
-        <div className="cd">
-          <Player c={c} stage={stage} style={thumbVars(c, T)} speakerNames={speakerNames} />
-          <aside className="side">
-            <div className="box">
-              <h4>In this conversation</h4>
-              <Link className="guest" href="/about"><Av p={{ name: host.name }} size={52} T={T} host /><div><b>{host.name}</b><small>Host</small></div></Link>
-              {c.guests.map((g) => P[g] && (
-                <Link key={g} className="guest" href={`/people/${g}`}><Av p={P[g]} size={52} T={T} /><div><b>{P[g].name}</b><small>{P[g].role} · {P[g].city}</small></div></Link>
-              ))}
-            </div>
-            {c.questions.length > 0 && <div className="box"><h4>Questions explored</h4><ul className="qs">{c.questions.map((q) => <li key={q}>{q}</li>)}</ul></div>}
-            {c.media.youtubeId && (
-              <div className="box"><h4>Watch elsewhere</h4><div className="listen">
-                <a href={`https://www.youtube.com/watch?v=${c.media.youtubeId}`} target="_blank" rel="noreferrer"><span>YouTube<em>Open ↗</em></span></a>
-              </div></div>
-            )}
-          </aside>
-        </div>
+        <ConversationView
+          c={c}
+          soft={T[c.themes[0]]?.soft ?? '#EFE7E1'}
+          speakerNames={speakerNames}
+          demo={!sanityEnabled}
+          aside={(
+            <>
+              <div className="box">
+                <h4>In this conversation</h4>
+                <Link className="guest" href="/about"><Av p={{ name: host.name }} size={52} T={T} host /><div><b>{host.name}</b><small>Host</small></div></Link>
+                {c.guests.map((g) => P[g] && (
+                  <Link key={g} className="guest" href={`/people/${g}`}><Av p={P[g]} size={52} T={T} /><div><b>{P[g].name}</b><small>{P[g].role} · {P[g].city}</small></div></Link>
+                ))}
+              </div>
+              {c.questions.length > 0 && <div className="box"><h4>Questions explored</h4><ul className="qs">{c.questions.map((q) => <li key={q}>{q}</li>)}</ul></div>}
+              {c.media.youtubeId && (
+                <div className="box"><h4>Also on</h4><div className="listen">
+                  <a href={`https://www.youtube.com/watch?v=${c.media.youtubeId}`} target="_blank" rel="noreferrer"><span>YouTube<em>Open ↗</em></span></a>
+                </div></div>
+              )}
+            </>
+          )}
+        />
       </div>
       {related.length > 0 && (
         <section><div className="wrap">

@@ -13,13 +13,18 @@ The site runs **before Sanity is connected**: with no Sanity project ID it uses 
 
 ## Run it locally
 
+Needs **Node.js 24 (LTS)**: `nvm install 24 && nvm use` (reads `.nvmrc`), or `brew install node@24`.
+
 ```bash
+cd path/to/site              # the folder with package.json in it
 npm install
 cp .env.example .env.local   # leave values empty to use the sample content
-npm run dev                  # http://localhost:3000  (Studio at /studio once Sanity is set up)
+npm run dev
 ```
 
-`npm run build && npm start` runs the production build.
+Wait for `✓ Ready`, then open **http://localhost:3000** in your browser. The dev server keeps running in that terminal window; run other commands in a new tab, and press **Ctrl+C** to stop it (Ctrl+Z only pauses it and keeps port 3000 busy; if that happens, run `kill %1`).
+
+`npm run build && npm start` runs the production build (stop the dev server first).
 
 ## Project map
 

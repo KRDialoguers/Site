@@ -1,9 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  // Pin the project root to this folder, so a stray package-lock.json higher up
+  // (e.g. in your home folder) doesn't confuse Next.js.
+  turbopack: { root: process.cwd() },
 };
 
 export default nextConfig;
