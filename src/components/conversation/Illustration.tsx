@@ -6,7 +6,7 @@
  *
  * Every line is a separate SVG stroke, so it can be animated:
  * - lines draw themselves in once, left to right, when the page loads;
- * - the blush shape slowly "breathes", and leans toward whoever is speaking;
+ * - the blush shape stays still, with a soft blurred edge;
  * - while audio plays, both figures sway very slightly; the speaker's lines get a touch heavier,
  *   and the guest's hand gestures while they talk;
  * - everything stops for visitors who prefer reduced motion.
@@ -33,7 +33,7 @@ export default function Illustration({ playing, speaker, ink = '#1E1A17', blush 
         <filter id="ill-wash" x="-20%" y="-20%" width="140%" height="140%">
           <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="n" />
           <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d" />
-          <feGaussianBlur in="d" stdDeviation="6" />
+          <feGaussianBlur in="d" stdDeviation="22" />
         </filter>
       </defs>
       <g className="ill-blob">

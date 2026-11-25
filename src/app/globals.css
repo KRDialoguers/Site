@@ -443,11 +443,6 @@ blockquote cite{display:block;font-style:normal;font-family:var(--sans);font-siz
 /* Illustration motion — slow and quiet by design */
 .ill .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:ill-draw 2.6s cubic-bezier(.4,0,.2,1) forwards}
 @keyframes ill-draw{to{stroke-dashoffset:0}}
-.ill-blob{transform-box:fill-box;transform-origin:center;animation:ill-breathe 18s ease-in-out infinite}
-.ill-blob ellipse{transition:transform 1.8s cubic-bezier(.4,0,.2,1)}
-.speaking-a .ill-blob ellipse{transform:translateX(-40px)}
-.speaking-b .ill-blob ellipse{transform:translateX(40px)}
-@keyframes ill-breathe{0%,100%{transform:scale(1) rotate(0deg)}50%{transform:scale(1.045) rotate(2.5deg)}}
 .ill-fig{transform-box:fill-box;transform-origin:50% 100%;transition:stroke-width .8s}
 .is-playing .ill-fig-a{animation:ill-sway 7s ease-in-out infinite}
 .is-playing .ill-fig-b{animation:ill-sway 8.5s ease-in-out -2s infinite}
